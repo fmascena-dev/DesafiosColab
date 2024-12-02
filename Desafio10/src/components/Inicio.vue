@@ -12,7 +12,7 @@ import logo from '../assets/logo2.svg';
           Nessas festas de fim de ano mande um presente para a pessoa amada e
           compartilhe a alegria do Natal.
         </p>
-        <button class="btn">Fazer uma doação</button>
+        <button class="btn">FAZER UMA DOAÇÃO</button>
       </div>
       <div class="loja">
         <img src="../assets/loja.png" alt="imagem de loja" />
@@ -25,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fac8c5;
+  background-color: #ffc8c5;
   padding: 3rem 5rem;
 }
 

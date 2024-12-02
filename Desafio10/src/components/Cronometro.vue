@@ -41,31 +41,70 @@ onUnmounted(() => {
 
 <template>
   <main>
-    <section>
-      <div>
+    <section class="section-main">
+      <div class="primeiro">
         <h2>Tempo limitado</h2>
         <p>
           Nessas festas de fim de ano mande um presente para a pessoa amada e
           compartilhe a alegria do Natal
         </p>
-        <p>
-            <span>{{ days }}d</span> -
-            <span>{{ hours }}</span> -
-            <span>{{ minutes }}</span> -
-            <span>{{ seconds }}</span>
+        <p class="timer">
+          <span>{{ days }}d - </span>
+          <span>{{ hours }}h - </span>
+          <span>{{ minutes }}m - </span>
+          <span>{{ seconds }}s</span>
         </p>
-        <img src="../assets/presentes.png" alt="imagem de presentes de Natal">
-      </div>
-      <div>
-        <figure>
-            <img src="../assets/decoracao.png" alt="Colocando decoração">
-        </figure>
-        <div>
-            <h2>Conectando generosidade ao redor do mundo</h2>
-            <p>Celebre a magia do Natal de uma maneira especial! Descubra a plataforma que permite a doação de presentes significativos para aqueles que mais precisam. Faça parte do movimento e compartilhe o verdadeiro espírito da generosidade.</p>
-        </div>
+        <img src="../assets/presentes.png" alt="imagem de presentes de Natal" />
       </div>
     </section>
   </main>
 </template>
-<style lang="scss"></style>
+<style scoped lang="scss">
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+  width: 80%;
+
+  .primeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 2rem;
+    width: 100%;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      width: 45%;
+      font-weight: 500;
+    }
+
+    .timer {
+      width: 70%;
+      font-weight: bold;
+
+      span {
+        font-size: 4rem;
+        color: rgba(205, 60, 50, 1);
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+}
+</style>
