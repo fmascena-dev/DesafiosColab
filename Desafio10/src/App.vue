@@ -15,7 +15,3 @@ import Inicio from './components/Inicio.vue';
  <Footer />
  
 </template>
-
-<style scoped lang="scss">
-
-</style>
