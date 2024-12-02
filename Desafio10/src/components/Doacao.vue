@@ -37,8 +37,13 @@
     display: flex;
     flex-direction: column;
     width: 30%;
-    gap: 1rem;
+    gap: 1.5rem;
     text-align: left;
+
+    p {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
   }
 
   .btn {
@@ -48,9 +53,11 @@
     width: 55%;
     padding: 0.6rem 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.5s ease;
 
     &:hover {
+      transform: scale(1.1);
+      font-weight: bold;
       background-color: rgb(255, 0, 0);
       text-decoration: underline;
       box-shadow: 1px 1px 10px 1px #000;

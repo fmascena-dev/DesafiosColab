@@ -7,11 +7,21 @@
     </figure>
     <div class="redes">
       <figure class="redes-sociais">
-        <img src="../assets/logo-twitter.svg" alt="icon twitter" />
-        <img src="../assets/logo-whatsapp2.svg" alt="icon whatsapp" />
-        <img src="../assets/logo-instagram.svg" alt="icon instagram" />
-        <img src="../assets/logo-facebook.svg" alt="icon facebook" />
-        <img src="../assets/logo-google.svg" alt="icon google" />
+        <a href="">
+          <img src="../assets/logo-twitter.svg" alt="icon twitter" />
+        </a>
+        <a href="">
+          <img src="../assets/logo-whatsapp2.svg" alt="icon whatsapp" />
+        </a>
+        <a href="">
+          <img src="../assets/logo-instagram.svg" alt="icon instagram" />
+        </a>
+        <a href="">
+          <img src="../assets/logo-facebook.svg" alt="icon facebook" />
+        </a>
+        <a href="">
+          <img src="../assets/logo-google.svg" alt="icon google" />
+        </a>
       </figure>
     </div>
   </footer>
@@ -32,6 +42,14 @@ footer {
     .redes-sociais {
       display: flex;
       gap: 2rem;
+
+      a{
+        transition: scale 0.5s ease;
+
+        &:hover {
+        transform: scale(1.3);
+      }
+    }
     }
   }
 }
