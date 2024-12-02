@@ -53,4 +53,38 @@ footer {
     }
   }
 }
+
+@media (min-width: 250px) and (max-width: 450px){
+    footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+
+    .redes {
+      flex-direction: column;
+
+      .redes-sociais {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 451px) and (max-width: 959px){
+    footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+
+    .redes {
+      flex-direction: column;
+
+      .redes-sociais {
+        gap: 1rem;
+      }
+    }
+  }
+}
 </style>

@@ -93,18 +93,86 @@ main {
     }
 
     .timer {
-      width: 70%;
+      width: 100%;
       font-weight: bold;
+      font-size: 4rem;
 
       span {
-        font-size: 4rem;
         color: rgba(205, 60, 50, 1);
       }
     }
 
     img {
-      width: 50%;
+      max-width: 100%;
     }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 450px) {
+  main {
+    padding: 0;
+  }
+
+  .section-main {
+    width: 100%;
+  }
+
+  .primeiro {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    span {
+      font-size: 1.8rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 451px) and (max-width: 959px) {
+  .section-main {
+    width: 100%;
+  }
+
+  .primeiro {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    span {
+      font-size: 2.8rem;
+    }
+
+    img {
+      width: 75%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1351px) and (max-width: 1959px){
+  .section-main {
+    width: 100%;
   }
 }
 </style>

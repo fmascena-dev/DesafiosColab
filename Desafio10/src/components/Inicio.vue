@@ -86,4 +86,71 @@ header {
     width: 90%;
   }
 }
+/* Responsividade para celular */
+@media (min-width: 250px) and (max-width: 450px) {
+  .section-inicio {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .inicio {
+    width: 100%;
+    align-items: center;
+
+    h1 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    img {
+      width: 50%;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .loja img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 959px) {
+  .section-inicio {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .inicio {
+    width: 100%;
+    align-items: center;
+
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    img {
+      width: 40%;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .btn {
+      width: 70%;
+    }
+  }
+}
 </style>
