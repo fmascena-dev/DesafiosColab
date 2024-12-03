@@ -3,15 +3,12 @@ import logo from '../../assets/image-michael-jordan.png';
 import logoShoes from '../../assets/logo.svg';
 
 export const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-image: url(${logo});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh;
-  padding: 2rem 10rem;
+  height: 50vh;
+  padding: 5rem 10rem;
 
   div {
     display: flex;
