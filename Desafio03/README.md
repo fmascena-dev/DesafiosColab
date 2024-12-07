@@ -2,9 +2,9 @@
 
 - **Link do desafio:** https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=3725-2
 
-# Projeto de Exemplo em Vue 3 com SCSS
+# Projeto em Vue 3 com SCSS
 
-*Este projeto é um exemplo de aplicação feita com Vue 3 que utiliza SCSS para estilização. Ele apresenta uma página inicial com três seções principais: introdução, lista de artigos e um formulário de contato.*
+*Este projeto é uma aplicação feita com Vue 3 que utiliza SCSS para estilização. Ele apresenta uma página inicial com três seções principais: introdução, lista de artigos e um formulário de contato.*
 
 ## Estrutura do Projeto
 
