@@ -47,7 +47,6 @@ export default function App() {
               required
             />{' '}
             <DivCheck>
-
             <CheckboxContainer>
               {' '}
               <input type="radio" id="lembrar" name="lembrar" />{' '}

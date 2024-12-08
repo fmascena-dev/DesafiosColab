@@ -23,7 +23,7 @@ export const ImageContainer = styled.div`
   }
 
   /* Oculta o ImageContainer em telas menores que 768px */
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
@@ -38,7 +38,7 @@ export const FormContainer = styled.div`
   padding: 2rem 5rem;
 
   /* Ajusta o padding para telas menores */
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 2rem;
   }
 `;
@@ -46,6 +46,14 @@ export const FormContainer = styled.div`
 export const DivTitles = styled.div`
   width: 70%;
   margin-bottom: 2rem;
+
+  @media (min-width: 250px) and (max-width: 769px) {
+    width: 100%;
+  }
+
+  @media (min-width: 770px) and (max-width: 1024px) {
+    width: 70%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -90,10 +98,11 @@ export const DivCheck = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  /* Ajusta o layout do DivCheck em telas menores */
-  @media (max-width: 768px) {
+  @media (min-width: 200px) and (max-width: 380px) {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -164,5 +173,10 @@ export const SignUpLink = styled.p`
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  @media (max-width: 1024px) {
+    position: sticky;
+    margin-top: 2rem;
   }
 `;
