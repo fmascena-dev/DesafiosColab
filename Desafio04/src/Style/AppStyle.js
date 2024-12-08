@@ -86,10 +86,10 @@ export const CheckboxContainer = styled.div`
 `;
 
 export const Link = styled.a`
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(30, 158, 106, 1);
   text-decoration: none;
+  font-weight: 500;
 
   &:hover {
     text-decoration: underline;
@@ -108,7 +108,7 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #43a047;
+    background: #43a020;
   }
 `;
 
@@ -125,17 +125,17 @@ export const SecondaryButton = styled(Button)`
   }
 
   &:hover {
-    background: #c33e2c;
+    background: #000044;
   }
 `;
 
 export const SignUpLink = styled.p`
-  margin-top: 1rem;
+  position: fixed;
+  bottom: 1rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   
   a {
-    font-weight: bold;
     font-size: 1.2rem;
     color: rgba(30, 158, 106, 1);
     text-decoration: none;
