@@ -21,6 +21,11 @@ export const ImageContainer = styled.div`
   img {
     max-width: 50%;
   }
+
+  /* Oculta o ImageContainer em telas menores que 768px */
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -31,12 +36,17 @@ export const FormContainer = styled.div`
   align-items: center;
   background: #ffffff;
   padding: 2rem 5rem;
+
+  /* Ajusta o padding para telas menores */
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
 `;
 
 export const DivTitles = styled.div`
   width: 70%;
   margin-bottom: 2rem;
-`
+`;
 
 export const Title = styled.h1`
   margin: 0;
@@ -54,6 +64,11 @@ export const Form = styled.form`
   width: 70%;
   display: flex;
   flex-direction: column;
+
+  /* Ajusta a largura do formulário em telas menores */
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Label = styled.label`
@@ -71,10 +86,16 @@ export const Input = styled.input`
 `;
 
 export const DivCheck = styled.div`
- display: flex;
- align-items:center;
- justify-content: space-between;
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Ajusta o layout do DivCheck em telas menores */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
 
 export const CheckboxContainer = styled.div`
   display: flex;
@@ -134,7 +155,7 @@ export const SignUpLink = styled.p`
   bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 500;
-  
+
   a {
     font-size: 1.2rem;
     color: rgba(30, 158, 106, 1);
