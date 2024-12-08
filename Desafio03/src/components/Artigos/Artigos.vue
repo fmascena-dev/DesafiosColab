@@ -57,31 +57,54 @@ const articles = ref([
 </script>
 
 <template>
-  <section>
-    <div v-for="item in articles" :key="item.id" class="article">
-      <img :src="item.imagem" alt="Imagem do artigo" />
-      <div class="textos">
-        <h3>{{ item.titulo }}</h3>
-        <p>{{ item.descricao }}</p>
-      </div>
+  <main>
+    <div>
+      <h1>Artigos Recomendados</h1>
     </div>
-  </section>
+    <section>
+      <div v-for="item in articles" :key="item.id" class="article">
+        <img :src="item.imagem" alt="Imagem do artigo" />
+        <div class="textos">
+          <h3>{{ item.titulo }}</h3>
+          <p>{{ item.descricao }}</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
 <style scoped lang="scss">
+h1 {
+  padding: 0rem 5rem;
+
+  @media (min-width: 250px) and (max-width: 768px) {
+    padding: 1.5rem 0.9rem;
+  }
+}
 
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 5rem;
-}
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0.9rem;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 250px) and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 0.9rem;
+    gap: 1.5rem;
+  }
+}
 
 .article {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   gap: 1rem;
   border: none;
   border-radius: 10px 10px 0 0;
@@ -89,7 +112,7 @@ section {
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }
 
@@ -99,10 +122,25 @@ section {
 }
 
 .textos {
-    padding: 1.3rem 1.3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
 }
 </style>
