@@ -1,0 +1,39 @@
+#sobre {
+    text-align: center;
+
+    h2 {
+        color: #97EDAA;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    p {
+        padding: 2rem 5rem;
+    }
+}
+
+.redes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
