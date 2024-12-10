@@ -16,13 +16,13 @@ export default function Header() {
           <a href="#sobre">Sobre mim</a>
         </li>
         <li>
-          <a href="#project">Projetos</a>
+          <a href="#projetos">Projetos</a>
         </li>
         <li>
-          <a href="">Serviços</a>
+          <a href="#servicos">Serviços</a>
         </li>
         <li>
-          <a href="">Habilidades</a>
+          <a href="/habilidades">Habilidades</a>
         </li>
       </nav>
     </header>

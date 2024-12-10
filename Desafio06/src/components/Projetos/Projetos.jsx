@@ -3,7 +3,7 @@ import './ProjetosStyle.scss';
 
 export default function Projetos() {
   return (
-    <main id="project">
+    <main id="projetos" className='project'>
       <h2>Projetos</h2>
       <div className="projetos-section">
         <section className="projetos-unicos">

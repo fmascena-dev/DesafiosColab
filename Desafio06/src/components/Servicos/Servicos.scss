@@ -1,0 +1,43 @@
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+
+  h2 {
+    color: #97edaa;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .services-section {
+    display: flex;
+    width: 90%;
+    padding: 2rem 4rem;
+    gap: 2rem;
+    justify-content: space-evenly;
+
+    figure {
+      background-color: #1f1f1f;
+      padding: 2rem 0.5rem;
+      width: 30%;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 5px solid #97edaa;
+      border-radius: 4px;
+
+      img {
+        width: 30%;
+        background-color: transparent;
+      }
+
+      h4 {
+        width: 50%;
+        background-color: transparent;
+        padding: 0 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
